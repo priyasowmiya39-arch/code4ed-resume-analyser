@@ -2,18 +2,6 @@
 Complete Resume-JD Evaluation System with Hybrid Data Support
 Fixed version with no syntax errors
 """
-import streamlit as st
-
-st.set_page_config(page_title="Debug App")
-
-st.write("✅ Streamlit started successfully!")
-
-# import your config only after confirming Streamlit runs
-try:
-    from app.config import Config
-    st.success("Config imported successfully")
-except Exception as e:
-    st.error(f"Config import failed: {e}")
 
 import streamlit as st
 from pathlib import Path
